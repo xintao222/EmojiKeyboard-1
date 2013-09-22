@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/emoticons_indicator_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.learn.testdifferentkeyboard.TabPageIndicator
+            android:id="@+id/emoticons_indicator"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="43dp"
+        	android:layout_height="53dp"
+        	android:paddingTop="11dp"
+        	android:paddingBottom="10dp"
+        	android:paddingLeft="5dp"
+        	android:paddingRight="5dp"
+            android:src="@drawable/back"
+            android:background="#373737" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/emoticons_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
